@@ -1,13 +1,46 @@
 {
   "pages": [
-    "pages/index/index",
-    "pages/logs/logs"
+    "pages/question/home/home",
+    "pages/selectcourse/courselist/courselist",
+    "pages/nous/nouslist/nouslist",
+    "pages/mycenter/mycenterlist/mycenterlist"
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "WeChat",
     "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#888",
+    "selectedColor": "#ff6e96",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/question/home/home",
+        "text": "题库",
+        "iconPath": "",
+        "selectedIconPath": ""
+      },
+      {
+        "pagePath": "pages/selectcourse/courselist/courselist",
+        "text": "选课",
+        "iconPath": "",
+        "selectedIconPath": ""
+      },
+      {
+        "pagePath": "pages/nous/nouslist/nouslist",
+        "text": "常识积累",
+        "iconPath": "",
+        "selectedIconPath": ""
+      },
+      {
+        "pagePath": "pages/mycenter/mycenterlist/mycenterlist",
+        "text": "个人中心",
+        "iconPath": "",
+        "selectedIconPath": ""
+      }
+    ]
   },
   "style": "v2",
   "sitemapLocation": "sitemap.json"

@@ -1,0 +1,18 @@
+{
+  "name": "myeducation",
+  "version": "1.0.0",
+  "description": "公务员考试教育",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://e.coding.net/myeducation/myeducation_wxapp.git"
+  },
+  "author": "zhulu",
+  "license": "ISC",
+  "dependencies": {
+    "lin-ui": "^0.5.15"
+  }
+}
