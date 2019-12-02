@@ -1,2 +1,7 @@
 <!--pages/mycenter/mycenterlist/mycenterlist.wxml-->
-<text>pages/mycenter/mycenterlist/mycenterlist.wxml</text>
+ <content-card class="content" name="">
+      <l-list title="错题本" />
+      <l-list title="题目收藏" />
+      <l-list title="我的笔记" />
+      <l-list title="班级测试" />
+</content-card>

@@ -1,2 +1,8 @@
 <!--pages/selectcourse/courselist/courselist.wxml-->
-<text>pages/selectcourse/courselist/courselist.wxml</text>
+<content-card l-content="content" name="滑动切换">
+     <l-tabs bind:linchange="changeTabs" l-class-header="l-class-header" l-class-active="l-class-active" placement="top" scrollable equal-width="{{false}}">
+        <l-tabpanel wx:for="{{scrollAbleTabs}}" tab="{{item.tab}}" key="{{item.key}}" slot="{{item.key}}" wx:key="{{item.key}}">
+          <view class="tab-content">{{item.tab}}</view>
+        </l-tabpanel>
+      </l-tabs>
+    </content-card>

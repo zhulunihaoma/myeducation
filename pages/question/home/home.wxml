@@ -1,2 +1,11 @@
 <!--pages/question/home/home.wxml-->
-<text>pages/question/home/home.wxml</text>
+<navBar title='我的教育' background='#fff' back="false" home="false"></navBar>
+<HomeBanner />
+<HomeRouter />
+<view  class='HomeBottom'>
+<HomeExercise />
+</view>
+<view  class='HomeBottom'>
+<HomeBottom  />
+</view>
+

@@ -1,0 +1,12 @@
+/* pages/question/home/components/HomeRouter/HomeRouter.wxss */
+.grid-item{
+    height: 200rpx;
+}
+.routerIcon{
+  background: #3963bc;
+  padding: 20rpx;
+  border-radius: 16rpx;  
+}
+.routerTitle{
+  margin-top: 16rpx;
+}

@@ -1,9 +1,20 @@
 {
+  "usingComponents": {
+    "l-icon": "../../../miniprogram_npm/lin-ui/icon/index",
+    "l-button": "../../../miniprogram_npm/lin-ui/button/index",
+    "content-card": "/components/content-card/index",
+    "l-list": "../../../miniprogram_npm/lin-ui/list/index",
+    "l-badge": "../../../miniprogram_npm/lin-ui/badge/index",
+    "l-dialog": "../../../miniprogram_npm/lin-ui/dialog/index",
+    "navBar": "/components/navBar/navBar"
+  },
   "pages": [
     "pages/question/home/home",
     "pages/selectcourse/courselist/courselist",
     "pages/nous/nouslist/nouslist",
-    "pages/mycenter/mycenterlist/mycenterlist"
+    "pages/mycenter/mycenterlist/mycenterlist",
+    "pages/question/realTest/chooseTestType/chooseTestType",
+    "pages/question/realTest/realTestList/realTestList"
   ],
   "window": {
     "backgroundTextStyle": "light",

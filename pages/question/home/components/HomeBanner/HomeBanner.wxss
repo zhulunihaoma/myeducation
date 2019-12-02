@@ -1,0 +1,15 @@
+/* pages/question/home/components/homebanner/HomeBanner.wxss */
+.swiper{
+  margin-left: 20rpx;
+margin-right: 20rpx;
+height: 340rpx;
+
+}
+.bannerImg{
+height: 340rpx;
+border-radius: 20rpx;
+
+width: 100%;
+/* margin-left: 20rpx;
+margin-right: 20rpx; */
+}

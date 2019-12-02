@@ -5,16 +5,42 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    scrollAbleTabs:[]
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    setTimeout(this._asyncData, 500)
   },
-
+  _asyncData() {
+    this.setData({
+      scrollAbleTabs: [{
+        tab: '精选',
+        key: 'treasure'
+      }, {
+        tab: '居家生活',
+        key: 'life'
+      }, {
+        tab: '美食厨房',
+        key: 'food'
+      }, {
+        tab: '服饰珠宝',
+        key: 'cloth'
+      }, {
+        tab: '美妆洗护',
+        key: 'cosmetics'
+      }, {
+        tab: '家用电器',
+        key: 'one'
+      },
+      {
+        tab: '运动女装',
+        key: 'sport'
+      }],
+    })
+  },
   /**
    * 生命周期函数--监听页面初次渲染完成
    */

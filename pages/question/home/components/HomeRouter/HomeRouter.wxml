@@ -1,0 +1,10 @@
+<!--pages/question/home/components/HomeRouter/HomeRouter.wxml-->
+<HomeRouter>
+<l-grid l-class="grid" row-num="4" show-col-border="{{false}}">
+    <l-grid-item 
+      wx:for="{{grids2}}" wx:key="{{index}}" key="{{index}}" slot="{{index}}" l-grid-item="grid-item">
+        <l-icon class="routerIcon" color="white" size="50" name="{{item.image}}" />
+        <view class="text routerTitle">{{item.text}}</view>
+    </l-grid-item>
+</l-grid>
+</HomeRouter>

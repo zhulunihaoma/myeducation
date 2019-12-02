@@ -1,4 +1,10 @@
 {
+  "navigationStyle": "custom",
   "navigationBarTitleText": "首页",
-  "usingComponents": {}
+  "usingComponents": {
+      "HomeBanner": "components/HomeBanner/HomeBanner",
+      "HomeRouter": "components/HomeRouter/HomeRouter",
+      "HomeExercise": "components/HomeExercise/HomeExercise",
+      "HomeBottom": "components/HomeBottom/HomeBottom"
+  }
 }

@@ -1,0 +1,10 @@
+<HomeBanner>
+ <swiper class="swiper" indicator-dots="{{indicatorDots}}"
+        autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+        <block wx:for="{{background}}">
+          <swiper-item>
+           <image class="bannerImg" src="{{item.src}}"></image>
+          </swiper-item>
+        </block>
+      </swiper>
+</HomeBanner>

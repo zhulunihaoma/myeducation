@@ -1,0 +1,10 @@
+/* pages/question/home/components/ HomeExercise/HomeExercise.wxss */
+.ExerciseView{
+  display: flex;
+  justify-content: space-around;
+  border-radius: 50rpx;
+  height: 120rpx;
+  box-shadow: 0rpx 20rpx 20rpx -20rpx #ccc;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+}

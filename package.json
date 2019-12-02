@@ -13,6 +13,8 @@
   "author": "zhulu",
   "license": "ISC",
   "dependencies": {
-    "lin-ui": "^0.5.15"
+    "lin-ui": "^0.5.15",
+    "wux-weapp": "^3.6.1",
+    "moment": "^2.24.0"
   }
 }

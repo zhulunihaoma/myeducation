@@ -1,0 +1,13 @@
+<!--pages/question/home/components/HomeBottom/HomeBottom.wxml-->
+<HomeBottom>
+  <view class="BottomView">
+    <content-card class="content" name="刷题">
+      <l-list title="判断推理" icon="add" l-class-icon="iconfont" desc="1212/123123" />
+      <l-list title="常识判断" icon="add" l-class-icon="iconfont" desc="1212/123123" />
+      <l-list title="数量关系" icon="add" l-class-icon="iconfont" desc="1212/123123" />
+      <l-list title="言语理解与表达" icon="add" l-class-icon="iconfont" desc="1212/123123" />
+      <l-list title="资料分析" icon="add" l-class-icon="iconfont" desc="1212/123123" />
+
+    </content-card>
+  </view>
+</HomeBottom>

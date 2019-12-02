@@ -1,0 +1,16 @@
+<!--pages/question/home/components/ HomeExercise/HomeExercise.wxml-->
+<HomeExercise>
+  <view class="ExerciseView">
+    <view class="ExerciseLeft">
+      <view class="title"> 每日一练</view>
+      <view bindtap="checktime" class="currentdate"> 2019-08-28</view>
+    </view>
+    <view class="ExerciseCenter">
+     <view class="totalDay"> <text class="dayNum">1</text><text class="dayText">天</text></view>
+      <view class="totalTips"> 累计练习</view>
+    </view>
+    <view class="ExerciseRight">
+    <l-button shape="semicircle">立即练习</l-button>
+    </view>
+  </view>
+</HomeExercise>
