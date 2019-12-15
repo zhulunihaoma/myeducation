@@ -14,6 +14,43 @@ Page({
   onLoad: function (options) {
 
   },
+  Lintap(e){
+    const type = e.currentTarget.dataset.type;
+    console.log('=====', type);
+
+    switch (type) {
+      case '0':
+        {
+          wx.navigateTo({
+            url: '../mistakeBook/mistakeBook',//错题本
+          })
+        }
+        break;
+      case '1':
+        {
+          wx.navigateTo({
+            url: '../subjectCollection/subjectCollection',//题目收藏
+          })
+        }
+        break;
+      case '2':
+        {
+          wx.navigateTo({
+            url: '../myNote/myNote',//我的笔记
+          })
+        }
+        break;
+      case '3':
+        {
+          wx.navigateTo({
+            url: '../classTest/classTest',//班级测试
+          })
+        }
+        break;
+      default:
+
+    } 
+  },
 
   /**
    * 生命周期函数--监听页面初次渲染完成

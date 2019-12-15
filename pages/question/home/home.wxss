@@ -1,4 +1,7 @@
 /* pages/question/home/home.wxss */
+page{
+  background: white;
+}
 .HomeBottom{
   margin-top: 30rpx;
 }

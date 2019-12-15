@@ -1,0 +1,4 @@
+<!--pages/exercisePage/readExercise/readExerciseIndex/readExercise.wxml-->
+<readExerciseHeader source='2015年5月9日江苏考试面试真题' toobject='所有结构化面试考生' />
+<subjectTabs />
+<readCard title='{{title}}' content='{{content}}' />

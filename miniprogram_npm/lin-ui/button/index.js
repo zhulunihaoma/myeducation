@@ -1,5 +1,5 @@
 Component({
-  externalClasses: ['l-class', 'l-hover-class', 'l-img-class'],
+  externalClasses: ['l-class', 'l-hover-class', 'l-img-class','l-icon-class'],
   properties: {
     // button组建标识
     name: {
@@ -37,10 +37,6 @@ Component({
     icon: String,
     image: String,
     bgColor: String,
-    iconStyle: {
-      type: String,
-      value: 'size:20;color:#3683D6'
-    },
     iconColor: String,
     iconSize: String,
     openType: String,
@@ -68,7 +64,7 @@ Component({
   methods: {
     // button点击事件
     handleTap() {
-      if (this.data.disabled) return false;
+      if (this.data.disabled || this.data.loading) return false;
       this.triggerEvent('lintap', {}, {
         bubbles: true,
         composed: true

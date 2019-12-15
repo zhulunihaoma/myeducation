@@ -4,7 +4,30 @@
   justify-content: space-around;
   border-radius: 50rpx;
   height: 120rpx;
-  box-shadow: 0rpx 20rpx 20rpx -20rpx #ccc;
+  box-shadow: 10rpx 20rpx 20rpx -20rpx #ccc;
   margin-left: 20rpx;
   margin-right: 20rpx;
+  padding-top: 20rpx;
+}
+.title{
+  font-size: 30rpx;
+  font-weight: bolder;
+}
+.ExerciseCenter{
+  margin-top: -20rpx;
+}
+.currentdate{
+  font-size: 24rpx;
+  margin-top: 12rpx;
+}
+.dayNum{
+  font-size: 50rpx;
+  font-weight: bolder;
+}
+.dayText{
+font-size: 24rpx;
+}
+.totalTips{
+   font-size: 22rpx;
+  margin-top: 2rpx;
 }

@@ -1,12 +1,35 @@
 /* pages/question/home/components/HomeRouter/HomeRouter.wxss */
-.grid-item{
-    height: 200rpx;
+
+.grid-item {
+  height: 200rpx;
 }
-.routerIcon{
+
+.routerIcon {
   background: #3963bc;
-  padding: 20rpx;
-  border-radius: 16rpx;  
+  padding: 10rpx 20rpx;
+  /* width: 100rpx;
+  height: 100rpx; */
+  color: white;
+  border-radius: 16rpx;
 }
-.routerTitle{
+
+.routerTitle {
   margin-top: 16rpx;
+}
+
+.HomeRouter_title{
+  margin-top: 30rpx;
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+  height: 70rpx;
+  line-height: 70rpx;
+  display: flex;
+  
+}
+
+.HomeRouter_title a {
+  display: block;
+  width: 20rpx;
+  height: 70rpx;
+  margin-right: 30rpx;
 }

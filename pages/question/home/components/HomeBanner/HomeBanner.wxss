@@ -2,13 +2,12 @@
 .swiper{
   margin-left: 20rpx;
 margin-right: 20rpx;
-height: 340rpx;
+height: 300rpx;
 
 }
 .bannerImg{
-height: 340rpx;
+height: 300rpx;
 border-radius: 20rpx;
-
 width: 100%;
 /* margin-left: 20rpx;
 margin-right: 20rpx; */

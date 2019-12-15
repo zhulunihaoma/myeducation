@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "试题详情",
+  "usingComponents": {
+    "readExerciseHeader": "../components/readExerciseHeader/readExerciseHeader",
+    "subjectTabs": "../components/subjectTabs/subjectTabs",
+    "readCard": "../components/readCard/readCard"
+  }
+}

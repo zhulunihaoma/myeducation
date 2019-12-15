@@ -1,4 +1,5 @@
 {
+  "navigationBarTitleText": "在线课堂",
   "usingComponents": {
     "l-tabs": "/miniprogram_npm/lin-ui/tabs/index",
     "l-tabpanel": "/miniprogram_npm/lin-ui/tabpanel/index"

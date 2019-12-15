@@ -1,0 +1,13 @@
+<!--pages/exercisePage/readExercise/components/subjectTabs/subjectTabs.wxml-->
+<subjectTabs>
+  <l-tabs bind:linchange="changeTabs" l-header-class="l-header-class" l-class-active="l-class-active" active-color='#3963bc' placement="top" scrollable equal-width="{{false}}">
+    <l-tabpanel wx:for="{{scrollAbleTabs}}" tab="{{item.tab}}" key="{{item.key}}" slot="{{item.key}}" wx:key="{{item.key}}">
+      <view class="subjectContent">
+        美国是当今世界最发达的资本主义国家,资本家要赚钱天经地义。然而有意思的是美国也是这个世界上最热衷于慈善的国家,根据美国霍普金斯大学的一项研究显示,从1995年到2002年,美国人每年捐出的善款总额占GDP的比例接近2%,高于所有的西方发达国家。市场消息来源称,英特尔在6月早期实施的CoreDuo处理器降价可能导致了全球笔记本电脑市场的需求增长。
+        <view wx:if='{{showMore}}' class="mayShow">
+          有消息来源称,仁宝电子公司首次打破了每月出货百万台笔记本电脑的历史记录,仁宝在6月出货了102万台笔记本电脑。该消息来源估计,Wistorn 公司6月的出货数量可能是70万台,而今年5月的出货数量是60万台。
+        </view>
+      </view>
+    </l-tabpanel>
+  </l-tabs>
+</subjectTabs>

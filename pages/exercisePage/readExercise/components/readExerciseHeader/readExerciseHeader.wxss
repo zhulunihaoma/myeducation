@@ -1,0 +1,8 @@
+/* pages/exercisePage/readExercise/components/readExerciseHeader/readExerciseHeader.wxss */
+.readExerciseHeader_box{
+  padding-top: 30rpx;
+  font-size: 30rpx;
+  margin-left: 30rpx;
+  line-height: 60rpx;
+
+}

@@ -1,0 +1,6 @@
+<!--pages/question/armtrans/armtransList/armtransList.wxml-->
+<l-tabs  bind:linchange="changeTabs" l-class-header="l-class-header" l-class-active="l-class-active" placement="top" scrollable equal-width="{{false}}">
+  <l-tabpanel wx:for="{{scrollAbleTabs}}" tab="{{item.tab}}" key="{{item.key}}" slot="{{item.key}}" wx:key="{{item.key}}">
+    <l-list l-class='l-class-list' wx:for="{{scrollAbleTabs}}" wx:key="{{item.key}}" title="2020年国家公务员考试申论真题" />
+  </l-tabpanel>
+  </l-tabs>

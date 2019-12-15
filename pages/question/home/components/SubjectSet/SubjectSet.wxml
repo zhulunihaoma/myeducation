@@ -1,0 +1,36 @@
+<!--pages/question/home/components/SubjectSet/SubjectSet.wxml-->
+<SubjectSet>
+  <view class="SubjectSet_header">
+    <l-radio-group placement="row">
+      <l-radio key="0">
+        <text class="titleFont2 subColor4d">正计时</text>
+      </l-radio>
+      <l-radio l-class='l-radio-class' key="1">
+        <text class="titleFont2 subColor4d">倒计时</text>
+      </l-radio>
+    </l-radio-group>
+  </view>
+  <view class="SubjectSet_count">
+    <view class="SubjectSet_count_title">题目数（题）</view>
+    <view>
+      <l-grid row-num="3 " show-col-border = false >
+        <l-grid-item wx:for="{{subjectList}}" wx:key="{{index}} " key="{{index}} " slot="{{index}} " l-grid-item="grid-item">
+          <l-button type="default" size="mini">{{item}}</l-button>
+        </l-grid-item>
+      </l-grid>
+    </view>
+  </view>
+  <view class="SubjectSet_timeSet">
+    <view class="SubjectSet_count_title">平均每题时间（秒）</view>
+    <view>
+      <l-grid row-num="3 " show-col-border = false >
+        <l-grid-item wx:for="{{subjectList}}" wx:key="{{index}}" key="{{index}} " slot="{{index}} " l-grid-item="grid-item">
+          <l-button type="default" size="mini">{{item}}</l-button>
+        </l-grid-item>
+      </l-grid>
+    </view>
+  </view>
+  <view class="SubjectSet_submit">
+    <l-button size="long">确定</l-button>
+  </view>
+</SubjectSet>

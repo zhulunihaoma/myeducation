@@ -1,7 +1,25 @@
 <!--pages/mycenter/mycenterlist/mycenterlist.wxml-->
- <content-card class="content" name="">
-      <l-list title="错题本" />
-      <l-list title="题目收藏" />
-      <l-list title="我的笔记" />
-      <l-list title="班级测试" />
-</content-card>
+<view class="userInfocard">
+  <view class="imgView">
+    <!-- <image>
+    </image> -->
+    <view class='userAvatarUrl'>
+      <open-data type="userAvatarUrl"></open-data>
+    </view>
+  </view>
+  <!-- <view class="getUserInfo_view"> 
+            <l-button bind:getuserinfo="getUserInfo" open-type="getUserInfo"></l-button>
+    </view> -->
+  <view class="nickName_Phone">
+    <view class="nickName"><open-data type="userNickName"></open-data></view>
+    <view class="Phone subColor4d">
+      18000066666
+    </view>
+  </view>
+</view>
+<view class="myCenterList">
+  <l-list bind:lintap='Lintap' data-type='0' title="错题本" />
+  <l-list bind:lintap='Lintap' data-type='1' title="题目收藏" />
+  <l-list bind:lintap='Lintap' data-type='2' title="我的笔记" />
+  <l-list bind:lintap='Lintap' data-type='3' title="班级测试" />
+</view>

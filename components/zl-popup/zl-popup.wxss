@@ -1,0 +1,41 @@
+/* components/zl-popup/zl-popup.wxss */
+.choosebox {
+  position: absolute;
+  height: 995rpx;
+  background: white;
+  width: 100%;
+  bottom: 0rpx;
+}
+.choosetittle{
+  /* display: flex; */
+  /* justify-content: space-between; */
+  text-align: center;
+  font-size: 40rpx;
+  color: #000;
+  margin: 30rpx 20rpx 0 24rpx;
+}
+.cancel{
+  float: right;
+  font-size: 30rpx;
+  font-weight: bold;
+}
+.cha {
+  display: inline-block;
+  width: 20px;
+  height: 1rpx;
+  background: #818181;
+  line-height: 0;
+  font-size: 0;
+  vertical-align: middle;
+  transform: rotate(45deg);
+  margin-top: 18rpx;
+}
+
+.cha::after {
+  content: '/';
+  display: block;
+  width: 20px;
+  height: 1rpx;
+  background: #818181;
+  transform: rotate(-90deg);
+}

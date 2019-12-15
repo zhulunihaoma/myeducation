@@ -1,4 +1,8 @@
 {
   "component": true,
-  "usingComponents": {}
+  "usingComponents": {
+        "zl-popup": "../../../../../components/zl-popup/zl-popup",
+        "SubjectSet": "../../components/SubjectSet/SubjectSet",
+        "SubjectAccordion": "../../components/SubjectAccordion/SubjectAccordion"
+  }
 }

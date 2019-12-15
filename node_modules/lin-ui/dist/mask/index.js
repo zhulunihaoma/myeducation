@@ -1,9 +1,10 @@
-// mask
+import zIndex from '../behaviors/zIndex';
 Component({
   /**
    * 组件的属性列表
    */
-  externalClasses: ['mask-class'],
+  behaviors: [zIndex],
+  externalClasses: ['l-class','l-mask-class'],
   properties: {
     // 显示与隐藏
     show: {

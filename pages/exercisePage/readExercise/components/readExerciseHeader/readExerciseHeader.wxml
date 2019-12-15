@@ -1,0 +1,12 @@
+<!--pages/exercisePage/readExercise/components/readExerciseHeader/readExerciseHeader.wxml-->
+<readExerciseHeader>
+  <view class="readExerciseHeader_box subColor80">
+    <view class="source">
+      来\n\n源：{{source}}
+    </view>
+    <view class="toobject">
+      适用对象：{{toobject}}
+    </view>
+
+  </view>
+</readExerciseHeader>

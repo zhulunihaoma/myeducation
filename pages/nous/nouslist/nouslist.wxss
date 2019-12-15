@@ -1,1 +1,18 @@
 /* pages/nous/nouslist/nouslist.wxss */
+.navibar{
+  
+}
+.title{
+  font-size: 36rpx;
+  font-weight: bolder;
+    text-align: center;
+    padding-top: 20rpx;
+
+}
+.content{
+  text-indent: 2em;
+    margin-top: 30rpx;
+    margin-left: 30rpx;
+    margin-right: 30rpx;
+
+}

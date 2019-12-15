@@ -14,7 +14,11 @@ Page({
   onLoad: function (options) {
 
   },
-
+  GoChooseType(){
+    wx.navigateTo({
+      url: '../chooseTestType/chooseTestType',
+    })
+  },
   /**
    * 生命周期函数--监听页面初次渲染完成
    */

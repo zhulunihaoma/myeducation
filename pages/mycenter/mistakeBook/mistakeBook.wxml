@@ -1,0 +1,2 @@
+<!--pages/mycenter/mistakeBook/mistakeBook.wxml-->
+<SubjectAccordion haveBack='true' />

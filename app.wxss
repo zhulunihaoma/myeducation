@@ -1,3 +1,5 @@
+@import 'imgs/iconfont/iconfont.wxss';
+
 /**app.wxss**/
 .container {
   height: 100%;
@@ -7,4 +9,44 @@
   justify-content: space-between;
   padding: 200rpx 0;
   box-sizing: border-box;
+
 } 
+page {
+  background: #F7F7F7;
+}
+/* 通用文字颜色 //#3498DB;*/
+.commonColor{
+color: #3963bc;
+}
+.commonBgColor{
+background-color: #3963bc;
+}
+/* 通用item有边款 */
+
+.borderline {
+  border-bottom: 2rpx solid #eee;
+}
+/* 文字大小以及颜色
+1：38rpx 加粗
+2：30rpx 加粗
+3：30rpx 不加粗
+4：24rpx 不加粗
+ */
+.titleFont1{
+  font-size: 38rpx;
+  font-weight: bold;
+}
+.titleFont2{
+  font-size: 30rpx;
+  font-weight: bold;
+}
+.titleFont24{
+  font-size: 24rpx;
+}
+/* 小标题文字颜色 */
+.subColor80{
+  color: #808080;
+}
+.subColor4d{
+  color: #4d4d4d;
+}

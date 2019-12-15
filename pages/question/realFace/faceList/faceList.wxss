@@ -1,0 +1,11 @@
+/* pages/question/realFace/faceList/faceList.wxss */
+.l-class-list{
+  background: white;
+  padding-left: 30rpx;
+  padding-right: 30rpx;
+  margin-top: 10rpx;
+  height: 100rpx;
+}
+.l-class-header{
+  background: white;
+}

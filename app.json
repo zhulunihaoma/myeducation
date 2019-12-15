@@ -2,10 +2,21 @@
   "usingComponents": {
     "l-icon": "../../../miniprogram_npm/lin-ui/icon/index",
     "l-button": "../../../miniprogram_npm/lin-ui/button/index",
-    "content-card": "/components/content-card/index",
     "l-list": "../../../miniprogram_npm/lin-ui/list/index",
     "l-badge": "../../../miniprogram_npm/lin-ui/badge/index",
     "l-dialog": "../../../miniprogram_npm/lin-ui/dialog/index",
+    "l-checkbox-group": "../../../miniprogram_npm/lin-ui/checkbox-group/index",
+    "l-checkbox": "../../../miniprogram_npm/lin-ui/checkbox/index",
+    "l-radio-group": "../../../miniprogram_npm/lin-ui/radio-group/index",
+    "l-radio": "../../../miniprogram_npm/lin-ui/radio/index",
+    "wux-icon": "../../../miniprogram_npm/wux-weapp/icon/index",
+    "wux-accordion-group": "../../../miniprogram_npm/wux-weapp/accordion-group/index",
+    "wux-accordion": "../../../miniprogram_npm/wux-weapp/accordion/index",
+    "wux-virtual-list": "../../../miniprogram_npm/wux-weapp/virtual-list/index",
+    "wux-virtual-item": "../../../miniprogram_npm/wux-weapp/virtual-item/index",
+    "wux-tabs": "../../../miniprogram_npm/wux-weapp/tabs/index",
+    "wux-tab": "../../../miniprogram_npm/wux-weapp/tab/index",
+    "content-card": "/components/content-card/index",
     "navBar": "/components/navBar/navBar"
   },
   "pages": [
@@ -14,7 +25,19 @@
     "pages/nous/nouslist/nouslist",
     "pages/mycenter/mycenterlist/mycenterlist",
     "pages/question/realTest/chooseTestType/chooseTestType",
-    "pages/question/realTest/realTestList/realTestList"
+    "pages/question/realTest/realTestList/realTestList",
+    "pages/question/realApply/applyList/applyList",
+    "pages/question/realFace/faceList/faceList",
+    "pages/question/aiStudy/aiDashbord/aiDashbord",
+    "pages/question/armtrans/armtransList/armtransList",
+    "pages/mycenter/mistakeBook/mistakeBook",
+    "pages/mycenter/subjectCollection/subjectCollection",
+    "pages/mycenter/myNote/myNote",
+    "pages/mycenter/classTest/classTest",
+    "pages/exercisePage/readExercise/readExerciseIndex/readExercise",
+    "pages/exercisePage/readExercise/components/subjectTabs/subjectTabs",
+    "pages/exercisePage/readExercise/components/readCard/readCard",
+    "pages/exercisePage/selectExercise/selectIndex/selectIndex"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -23,33 +46,33 @@
     "navigationBarTextStyle": "black"
   },
   "tabBar": {
-    "color": "#888",
-    "selectedColor": "#ff6e96",
+    "color": "#bfbfbf",
+    "selectedColor": "#1296db",
     "backgroundColor": "#ffffff",
     "list": [
       {
         "pagePath": "pages/question/home/home",
         "text": "题库",
-        "iconPath": "",
-        "selectedIconPath": ""
+        "iconPath": "imgs/tabbar/edit.png",
+        "selectedIconPath": "imgs/tabbar/edit-2.png"
       },
       {
         "pagePath": "pages/selectcourse/courselist/courselist",
         "text": "选课",
-        "iconPath": "",
-        "selectedIconPath": ""
+        "iconPath": "imgs/tabbar/shipin.png",
+        "selectedIconPath": "imgs/tabbar/shipin-2.png"
       },
       {
         "pagePath": "pages/nous/nouslist/nouslist",
         "text": "常识积累",
-        "iconPath": "",
-        "selectedIconPath": ""
+        "iconPath": "imgs/tabbar/wendang.png",
+        "selectedIconPath": "imgs/tabbar/wendang-2.png"
       },
       {
         "pagePath": "pages/mycenter/mycenterlist/mycenterlist",
         "text": "个人中心",
-        "iconPath": "",
-        "selectedIconPath": ""
+        "iconPath": "imgs/tabbar/gerenzhongxin.png",
+        "selectedIconPath": "imgs/tabbar/gerenzhongxin-2.png"
       }
     ]
   },

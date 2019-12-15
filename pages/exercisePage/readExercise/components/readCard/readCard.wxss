@@ -1,0 +1,25 @@
+/* pages/exercisePage/readExercise/components/readCard/readCard.wxss */
+.HomeRouter_title{
+  margin-top: 30rpx;
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  display: flex;
+}
+
+.HomeRouter_title a {
+  display: block;
+  width: 20rpx;
+  height: 80rpx;
+  margin-right: 30rpx;
+}
+.content{
+  background-color: white;
+  padding: 30rpx;
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+  margin-top: 30rpx;
+  line-height: 60rpx;
+
+}

@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "wux-popup": "../../miniprogram_npm/wux-weapp/popup/index"
+  }
+}

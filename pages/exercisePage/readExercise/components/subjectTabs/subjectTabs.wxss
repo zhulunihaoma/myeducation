@@ -1,0 +1,19 @@
+/* pages/exercisePage/readExercise/components/subjectTabs/subjectTabs.wxss */
+.l-header-class{
+  background-color: transparent !important;
+  margin-top: 60rpx;
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+  width: calc(100vw - 60rpx);
+}
+/* 题目内容 */
+.subjectContent{
+line-height: 60rpx;
+margin-top: 30rpx;
+background-color: white;
+margin-left: 30rpx;
+margin-right: 30rpx;
+font-size: 30rpx;
+padding: 30rpx;
+text-indent: 2em;
+}

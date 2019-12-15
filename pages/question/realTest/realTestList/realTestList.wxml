@@ -1,2 +1,30 @@
 <!--pages/question/realTest/realTestList/realTestList.wxml-->
-<text>pages/question/realTest/realTestList/realTestList.wxml</text>
+<wux-accordion-group class='aaa' accordion default-current="{{ [] }}">
+  <wux-accordion title="江苏">
+    <view bindtap="GoChooseType" class="sublist_item">2019402联考《行题》真题网友回忆版本</view>
+  </wux-accordion>
+  <wux-accordion title="北京">
+    <view bindtap="GoChooseType" class="sublist_item">2019402联考《行题》真题网友回忆版本</view>
+  </wux-accordion>
+  <wux-accordion title="国考">
+    <view bindtap="GoChooseType" class="sublist_item">2019402联考《行题》真题网友回忆版本</view>
+  </wux-accordion>
+  <wux-accordion title="江苏">
+    <view bindtap="GoChooseType" class="sublist_item">2019402联考《行题》真题网友回忆版本</view>
+  </wux-accordion>
+  <wux-accordion title="北京">
+    <view bindtap="GoChooseType" class="sublist_item">2019402联考《行题》真题网友回忆版本</view>
+  </wux-accordion>
+  <wux-accordion title="国考">
+    <view bindtap="GoChooseType" class="sublist_item">2019402联考《行题》真题网友回忆版本</view>
+  </wux-accordion>
+  <wux-accordion title="江苏">
+    <view bindtap="GoChooseType" class="sublist_item">2019402联考《行题》真题网友回忆版本</view>
+  </wux-accordion>
+  <wux-accordion title="北京">
+    <view bindtap="GoChooseType" class="sublist_item">2019402联考《行题》真题网友回忆版本</view>
+  </wux-accordion>
+  <wux-accordion title="国考">
+    <view bindtap="GoChooseType" class="sublist_item">2019402联考《行题》真题网友回忆版本</view>
+  </wux-accordion>
+</wux-accordion-group>

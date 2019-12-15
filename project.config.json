@@ -22,8 +22,8 @@
 		}
 	},
 	"compileType": "miniprogram",
-	"libVersion": "2.9.3",
-	"appid": "wx5af4668cacf527bc",
+	"libVersion": "2.7.2",
+	"appid": "wx80a95c361710ae47",
 	"projectname": "myeducation",
 	"debugOptions": {
 		"hidedInDevtools": []
@@ -40,13 +40,91 @@
 			"current": -1,
 			"list": []
 		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
 		"game": {
 			"currentL": -1,
 			"list": []
 		},
-		"miniprogram": {
+		"gamePlugin": {
 			"current": -1,
 			"list": []
+		},
+		"miniprogram": {
+			"current": -1,
+			"list": [
+				{
+					"id": -1,
+					"name": "在线课堂",
+					"pathName": "pages/selectcourse/courselist/courselist",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "历年真题类型选择",
+					"pathName": "pages/question/realTest/chooseTestType/chooseTestType",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "在线课堂",
+					"pathName": "pages/selectcourse/courselist/courselist",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "行题真测列表",
+					"pathName": "pages/question/realTest/realTestList/realTestList",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "申题真测列表",
+					"pathName": "pages/question/realApply/applyList/applyList",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "智能学习",
+					"pathName": "pages/question/aiStudy/aiDashbord/aiDashbord",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "个人中心",
+					"pathName": "pages/mycenter/mycenterlist/mycenterlist",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "阅读类试题详情",
+					"pathName": "pages/exercisePage/readExercise/readExerciseIndex/readExercise",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "选择界面",
+					"pathName": "pages/exercisePage/selectExercise/selectIndex/selectIndex",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "常识积累",
+					"pathName": "pages/nous/nouslist/nouslist",
+					"scene": null
+				}
+			]
 		}
 	}
 }

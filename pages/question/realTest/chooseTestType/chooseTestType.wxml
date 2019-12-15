@@ -1,2 +1,11 @@
 <!--pages/question/realTest/chooseTestType/chooseTestType.wxml-->
-<text>pages/question/realTest/chooseTestType/chooseTestType.wxml</text>
+<view class="title subColor4d">2013年北京市公务员开始录用开始《行测》真题</view>
+<l-checkbox-group bind:linchange="onChangeTap">
+  <view class="choosebox_view" wx:for="{{items1}}" wx:key="{{item.id}}">
+    <l-checkbox l-class="choosebox" placement="right" checked="{{item.checked}}" value="{{item.name}}" key="{{item.id}} ">{{item.name}}</l-checkbox>
+  </view>
+
+
+</l-checkbox-group>
+<view class="bottomView"> <l-button size="large">开始做题</l-button>
+</view>

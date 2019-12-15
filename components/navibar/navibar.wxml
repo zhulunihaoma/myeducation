@@ -1,0 +1,15 @@
+<!--components/navibar/navibar.wxml-->
+<navibar>
+  <view class='navibarview'>
+    <view class="cu-bar fixed" style="height:{{CustomBar}}px;padding-top:{{StatusBar}}px;background: white;">
+      <!-- <view  class="{{showBack?'navibar':'noback'}}"> -->
+      <!-- <icon wx:if='{{showBack}}' bindtap="goback" class="iconfont icon-xiayiji"></icon>
+        <icon bindtap="gohome" class="iconfont icon-shouye-xuanzhong"></icon> -->
+      <view class="currentDate"> {{currentDate}}
+        <wux-icon bindtap="ChooseSet" class="header_icon" size="26" type="md-arrow-dropdown" />
+      </view>
+      <!-- </view> -->
+      <view class='content' style='top:{{StatusBar}}px;'>{{title}}</view>
+    </view>
+  </view>
+</navibar>

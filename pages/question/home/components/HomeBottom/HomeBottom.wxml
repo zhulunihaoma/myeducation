@@ -1,13 +1,15 @@
 <!--pages/question/home/components/HomeBottom/HomeBottom.wxml-->
 <HomeBottom>
   <view class="BottomView">
-    <content-card class="content" name="刷题">
-      <l-list title="判断推理" icon="add" l-class-icon="iconfont" desc="1212/123123" />
-      <l-list title="常识判断" icon="add" l-class-icon="iconfont" desc="1212/123123" />
-      <l-list title="数量关系" icon="add" l-class-icon="iconfont" desc="1212/123123" />
-      <l-list title="言语理解与表达" icon="add" l-class-icon="iconfont" desc="1212/123123" />
-      <l-list title="资料分析" icon="add" l-class-icon="iconfont" desc="1212/123123" />
-
-    </content-card>
+    <view class="card_header">
+      <text>刷题</text>
+      <wux-icon bindtap="ChooseSet" class="header_icon" size="27" type="ios-settings" />
+    </view>
+    <view>
+     <SubjectAccordion />
+    </view>
+    <zl-popup tittle='刷题设置' visible='{{SubjectVisible}}' maskClosable = true  bind:setVisible='ChooseSet'>
+        <SubjectSet/>
+    </zl-popup>
   </view>
 </HomeBottom>

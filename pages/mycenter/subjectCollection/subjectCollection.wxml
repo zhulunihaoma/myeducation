@@ -1,0 +1,2 @@
+<!--pages/mycenter/subjectCollection/subjectCollection.wxml-->
+<SubjectAccordion haveBack='true' />

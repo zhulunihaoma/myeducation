@@ -9,7 +9,9 @@ Component({
   properties: {
 
   },
-
+  options: {
+    addGlobalClass: true,
+  },
   /**
    * 组件的初始数据
    */
@@ -23,6 +25,11 @@ Component({
   methods: {
     checktime() {
       console.log('====', moment('Wed Nov 27 2019 15:06:55 GMT+0800').format('YYYY-MM-DD HH:mm'));
-    }
+    },
+    GoselectIndex() {
+      wx.navigateTo({
+        url: '../../../../../../exercisePage/selectExercise/selectIndex/selectIndex',
+      })
+    },
   }
 })

@@ -1,0 +1,20 @@
+/* pages/question/home/components/SubjectSet/SubjectSet.wxss */
+.SubjectSet_header{
+  padding: 30rpx;
+}
+.l-radio-class{
+  margin-left: 60rpx;
+}
+.SubjectSet_count_title{
+  text-align: left;
+  margin-bottom: 30rpx;
+  margin-top: 30rpx;
+  margin-left: 30rpx;
+}
+.grid-item{
+    height: 80rpx;
+}
+.SubjectSet_submit{
+  margin-top: 30rpx;
+
+}

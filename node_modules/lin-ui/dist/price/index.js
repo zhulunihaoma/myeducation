@@ -2,10 +2,7 @@ Component({
   /**
    * 组件的属性列表
    */
-  externalClasses: ['l-deleted-class', 'l-unit-class', 'l-count-class', 'l-class'],
-  options: {
-    multipleSlots: true // 在组件定义时的选项中启用多slot支持
-  },
+  externalClasses: ['l-deleted-class', 'l-unit-class', 'l-value-class', 'l-class'],
   properties: {
     unit: {
       type: String,
@@ -26,14 +23,17 @@ Component({
     unitColor: String,
     unitSize: String,
     unitBold: String,
-    count: {
+    value: {
       type: String,
-      value: '0.00',
-      observer: 'reserveNumber'
+      value: '0.00'
     },
-    countColor: String,
-    countSize: String,
-    countBold: String,
+    mode: {
+      type: String,
+      value: 'number'
+    },
+    valueColor: String,
+    valueSize: String,
+    valueBold: String,
     deleted: Boolean,
     delColor: String,
     reserveDigit: {
@@ -50,39 +50,27 @@ Component({
 
   },
 
+  observers: {
+    'value': function () {
+      this.reserveNumber();
+    }
+  },
+
   /**
    * 组件的方法列表
    */
   methods: {
     reserveNumber() {
-      const strValue = this.data.count.toString();
-      const isNumber = !isNaN(Number(this.data.count));
-      const dotIndex = strValue.indexOf('.');
-      if (strValue.length - dotIndex - 1 > this.data.reserveDigit && dotIndex !== -1) {
-        this.setData({
-          result: isNumber ? strValue.substring(0, dotIndex + 1 + this.data.reserveDigit) : strValue
-        });
-      } else {
-        if (isNumber) {
-          this.addZero(strValue);
-        } else {
-          this.setData({
-            result: strValue
-          });
-        }
-      }
-    },
-    addZero(value) {
-      const dotIndex = value.indexOf('.') == -1 ? value.length - 1 : value.indexOf('.');
-      const realLen = dotIndex + 1 + this.data.reserveDigit;
-      if (value.length < realLen && this.data.autofix) {
-        const result = dotIndex == value.indexOf('.') ? value + '0'.repeat(realLen - value.length) : value + '.' + '0'.repeat(realLen - value.length);
+      const countToNumber = Number(this.data.value);
+      const isText = isNaN(Number(countToNumber)) || (this.data.mode === 'text');
+      if (!isText && this.data.autofix) {
+        const result = countToNumber.toFixed(this.data.reserveDigit);
         this.setData({
           result
         });
       } else {
         this.setData({
-          result: value
+          result: this.data.value
         });
       }
     }

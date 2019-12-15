@@ -1,0 +1,8 @@
+<!--pages/exercisePage/readExercise/components/readCard/readCard.wxml-->
+<readCard>
+  <view class="HomeRouter_title">
+    <a class='commonBgColor'></a> {{title}}</view>
+  <view class="content">
+    {{content}}
+  </view>
+</readCard>

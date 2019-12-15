@@ -1,0 +1,78 @@
+<!--pages/question/aiStudy/aiDashbord/aiDashbord.wxml-->
+<view class="ai_header">
+  <view class="currentDate">2019-12-12</view>
+  <view class="chooseType">
+
+
+
+
+    <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+
+      <text class="typeTitle subColor80">类型：</text>
+      <text class="typecontent">{{array[index]}}</text>
+      <wux-icon bindtap="ChooseSet" class="header_icon" size="22" type="md-arrow-dropdown" />
+
+    </picker>
+
+
+  </view>
+
+</view>
+<view class="ai_info cardView">
+  <view class="cardTitle">知识点掌握情况</view>
+  <view class="carContent">
+
+    <scroll-view scroll-x="true" class="info_scroll">
+      <view class="info_scroll_content">
+        <view wx:for='{{aiList}}' wx:key='index' class="info_item">
+          <view class="title">{{item.title}}</view>
+          <view class="count subColor80">已做
+            <text class="countText commonColor">{{item.count}}</text>题</view>
+          <view class="degree">正确率{{item.degree}}</view>
+
+        </view>
+      </view>
+    </scroll-view>
+  </view>
+
+</view>
+<view class="cardView">
+  <view class="cardTitle">我要练习</view>
+  <view class="practice_content">
+    <view class="practice_item practice_item1">
+      <view class="practice_item_title">刷题
+        <text>（推荐）</text>
+      </view>
+      <view class="line_icon">
+        <a></a>
+        <wux-icon bindtap="ChooseSet" class="exercise_icon" size="22" type="md-create" />
+      </view>
+      <view class="practice_item_des">
+        针对您的薄弱环节进行推荐题目
+      </view>
+    </view>
+    <view class="practice_item practice_item2">
+      <view class="practice_item_title">刷题</view>
+      <view class="line_icon">
+        <a></a>
+        <wux-icon bindtap="ChooseSet" class="exercise_icon" size="22" type="md-create" />
+      </view>
+      <view class="practice_item_des">
+        针对您的薄弱环节进行推荐题目
+      </view>
+    </view>
+
+  </view>
+</view>
+<view class="cardView">
+  <view class="cardTitle">关注我们</view>
+  <view class='contanctusView'>
+    <l-button l-class='l-class-focus' bg-color='#ccc' shape="semicircle">微信二维码
+      <icon bindtap="ChooseSet" class="icon-weixin iconfont" size="22" />
+    </l-button>
+    <l-button l-class='l-class-focus' bg-color='#ccc' shape="semicircle">微博二维码
+      <icon bindtap="ChooseSet" class="icon-weibo iconfont" size="22" />
+    </l-button>
+
+  </view>
+</view>

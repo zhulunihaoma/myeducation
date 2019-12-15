@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+        "SubjectAccordion": "../../question/home/components/SubjectAccordion/SubjectAccordion"
+  }
+}

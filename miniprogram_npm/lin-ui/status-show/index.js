@@ -16,7 +16,19 @@ Component({
     buttonText: String,
     bgColor: {
       type: String,
-      valure: '#fff'
+      value: '#fff'
+    },
+    fullScreen: {
+      type: Boolean,
+      value: true,
+    },
+    openApi: {
+      type: Boolean,
+      value: true
+    },
+    custom: {
+      type: Boolean,
+      value: false
     }
   },
 
@@ -27,14 +39,49 @@ Component({
 
   },
 
-  ready() {
+  attached() {
     this._changeStatus();
+    if (this.data.openApi) this._init();
+  },
+
+  pageLifetimes: {
+    show() {
+      this._init();
+    },
   },
 
   /**
    * 组件的方法列表
    */
   methods: {
+    _init() {
+      wx.lin = wx.lin || {};
+      wx.lin.showStatusShow = (options) => {
+        const {
+          type = 'success',
+          image = '',
+          describe = '',
+          buttonText = '',
+          bgColor = '#fff',
+          fullScreen = true
+        } = { ...options };
+        this.setData({
+          show: true,
+          type,
+          image,
+          describe,
+          buttonText,
+          bgColor,
+          fullScreen
+        });
+      };
+      wx.lin.hideStatusShow = () => {
+        this.setData({
+          show: false
+        });
+      };
+    },
+
     _changeStatus() {
       switch (this.properties.type) {
       case 'success':
@@ -88,8 +135,11 @@ Component({
       }
     },
 
-    onBtn() {
-      this.triggerEvent('lintap', {}, { bubbles: true, composed: true });
+    tapStatusShow() {
+      this.triggerEvent('lincorvertap', {}, {
+        bubbles: true,
+        composed: true
+      });
     }
   }
 });

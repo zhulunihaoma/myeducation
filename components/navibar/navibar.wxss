@@ -1,0 +1,55 @@
+/* components/navibar/navibar.wxss */
+
+.navibarview {
+  position: fixed;
+  top: 0rpx;
+  width: 100%;
+}
+
+.currentDate {
+  line-height: 60rpx;
+  margin-left: 20rpx;
+  font-size: 34rpx;
+  font-weight: bold;
+  margin-top: 10rpx;
+}
+
+.navibar {
+  width: 190rpx;
+  border: 2rpx solid #efefef;
+  height: 60rpx;
+  border-radius: 60rpx;
+  display: flex;
+  justify-content: space-around;
+  line-height: 60rpx;
+  margin-left: 20rpx;
+  /* background: red; */
+}
+
+.noback {
+  width: 95rpx;
+  border: 2rpx solid #efefef;
+  height: 60rpx;
+  border-radius: 60rpx;
+  display: flex;
+  justify-content: space-around;
+  line-height: 60rpx;
+  margin-left: 20rpx;
+}
+
+.navibarview {
+  background: white;
+}
+
+.icon-xiayiji {
+  transform: rotate(180deg);
+  position: relative;
+  /* top: 6rpx; */
+  height: 60rpx;
+}
+
+.icon-shouye-xuanzhong {
+  position: relative;
+  /* top: -4rpx; */
+  height: 60rpx;
+}

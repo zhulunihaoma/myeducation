@@ -1,34 +1,46 @@
 Component({
-    relations: {
-        '../grid/index': {
-            type: 'parent'
-        },
+  relations: {
+    '../grid/index': {
+      type: 'parent'
     },
-    externalClasses: ['l-grid-item'],
-    properties: {
-        key: String,
-        cell:{
-            type:Object,
-            value:{}
-        },
+  },
+  externalClasses: ['l-grid-item', 'l-grid-item-class'],
+  properties: {
+    key: String,
+    cell:{
+      type:Object,
+      value:{}
     },
-    data: {
-        index:0,
-    },
-    attached() {
+  },
+  data: {
+    index:0,
+  },
+  attached() {
 
-    },
-
-    lifetimes: {
-        show() {
-
-        },
-    },
-    methods: {
-        tapGridItem(e) {
-            this.triggerEvent('linitemtap', {
-                ...this.data
-            }, { bubbles: true, composed: true })
-        },
+  },
+  observers: {
+    'key': function() {
+      const parent = this.getRelationNodes('../grid/index')[0];
+      if (parent) {
+        parent.setData({
+          gridItems: [],
+          childNum: 0
+        });
+        parent.initGrids();
+      }
     }
+  },
+
+  lifetimes: {
+    show() {
+
+    },
+  },
+  methods: {
+    tapGridItem() {
+      this.triggerEvent('linitemtap', {
+        ...this.data
+      }, { bubbles: true, composed: true });
+    },
+  }
 });

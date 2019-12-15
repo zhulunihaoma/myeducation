@@ -1,0 +1,24 @@
+<!--pages/question/home/components/SubjectAccordion/SubjectAccordion.wxml-->
+<SubjectAccordion>
+<view class="{{haveBack?'SubjectAccordion_box':''}} ">
+  <block wx:for='{{title}}' wx:for-item="title" wx:key index="{{title.id}}">
+    <view class="level1">
+      <wux-icon bindtap="ShowSubList" data-index="{{index}}" class="level1_icon" size="25" type="{{title.show?'ios-remove-circle':'ios-add-circle'}}" />
+      <l-list l-content-class='l-title-class' l-desc-class='l-desc-class' l-class='lisclass' title="{{title.name}}" desc="1212/123123" />
+    </view>
+    <block wx:for='{{title.sublist}}' wx:for-item="subItem" wx:key='index'>
+      <view wx:if='{{title.show}}'>
+        <wux-icon data-index="{{title.name}}" data-index2="{{subItem.name}}" bindtap="ShowSubList2" wux-class="level2_icon" size="25" type="{{subItem.show?'ios-remove-circle-outline':'ios-add-circle-outline'}}" />
+        <l-list l-class='lisclass' l-desc-class='l-desc-class' title="{{subItem.name}}" desc="1212/123123" />
+      </view>
+      <block wx:if='{{subItem.show}}' wx:for='{{sublist}}' wx:for-item="subItem2" wx:key='index'>
+        <l-list l-class='sub_lisclass' l-desc-class='l-desc-class' title="学习常识" desc="1212/123123" />
+
+      </block>
+    </block>
+
+
+
+  </block>
+  </view>
+</SubjectAccordion>

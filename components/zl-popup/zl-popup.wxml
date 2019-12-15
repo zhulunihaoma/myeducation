@@ -1,0 +1,13 @@
+<!--components/zl-popup/zl-popup.wxml-->
+<zl-popup>
+  <wux-popup  closable='{{closable}}' position="bottom" bind:close="Cancel" visible="{{ visible }}"  >
+
+    <view bindtap='cancelmusk' class='choosetittle'>
+      <view>{{tittle}} <text class="cancel commonColor" bindtap="Cancel">取消</text></view>
+      
+    </view>
+    <slot></slot>
+
+
+  </wux-popup>
+</zl-popup>

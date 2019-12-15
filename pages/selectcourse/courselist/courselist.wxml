@@ -1,8 +1,62 @@
 <!--pages/selectcourse/courselist/courselist.wxml-->
-<content-card l-content="content" name="滑动切换">
-     <l-tabs bind:linchange="changeTabs" l-class-header="l-class-header" l-class-active="l-class-active" placement="top" scrollable equal-width="{{false}}">
-        <l-tabpanel wx:for="{{scrollAbleTabs}}" tab="{{item.tab}}" key="{{item.key}}" slot="{{item.key}}" wx:key="{{item.key}}">
-          <view class="tab-content">{{item.tab}}</view>
-        </l-tabpanel>
-      </l-tabs>
-    </content-card>
+<l-tabs bind:linchange="changeTabs" l-class-header="l-class-header" l-class-active="l-class-active" placement="top" scrollable active-color='#3963bc' equal-width="{{false}}">
+  <l-tabpanel wx:for="{{scrollAbleTabs}}" tab="{{item.tab}}" key="{{item.key}}" slot="{{item.key}}" wx:key="{{item.key}}">
+    <view class="tab-content">
+      <!-- <wux-virtual-list id="wux-virtual-list" enablePageScroll height="{{ height }}" itemHeight="100" itemBuffer="30" disableScroll="{{ disableScroll }}" bind:change="onChange">
+        <wux-virtual-item wx:for="{{ virtual.items }}" wx:key="item">
+          <view class="item">
+            <view class="index">{{ '#' + item }}</view>
+            <view class="desc">Wux NB</view>
+          </view>
+        </wux-virtual-item>
+      </wux-virtual-list> -->
+    </view>
+    <view wx:for="{{scrollAbleTabs}}" class="curseContent">
+    <a class='tips commonBgColor'><text class="lable">一对一</text> <text class="transform commonBgColor"></text></a>
+      <view class="curseTitle">
+        2020公考笔试一对一定制课程
+      </view>
+      <view class="curseFeature">
+        <view class="featureItem">
+           <wux-icon size='16' color="#ccc" type="ios-book" /><text>不限</text></view>
+        <view class="featureItem">
+           <wux-icon size='16' color="#ccc" type="ios-book" /><text>12课程</text></view>
+
+      </view>
+      <view class="curseTeam borderline">
+        <view class="curseTeamItem">
+          <view class="curseTeamItem_imgView">
+            <image class="curseTeamItem_img" src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=2775199454,873516845&fm=26&gp=0.jpg"></image>
+          </view>
+          <view class="curseTeamItem_name">
+            汤老师
+          </view>
+
+        </view>
+        <view class="curseTeamItem">
+          <view class="curseTeamItem_imgView">
+            <image class="curseTeamItem_img" src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=2775199454,873516845&fm=26&gp=0.jpg"></image>
+          </view>
+          <view class="curseTeamItem_name">
+            汤老师
+          </view>
+
+        </view>
+        <view class="curseTeamItem">
+          <view class="curseTeamItem_imgView">
+            <image class="curseTeamItem_img" src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=2775199454,873516845&fm=26&gp=0.jpg"></image>
+          </view>
+          <view class="curseTeamItem_name">
+            汤老师
+          </view>
+
+        </view>
+      </view>
+      <view class="curseBottom">
+        <text class="limitCount subColor80">限制人数：50人</text>
+        <text class="price">3900</text>
+      </view>
+    </view>
+
+  </l-tabpanel>
+</l-tabs>

@@ -1,1 +1,31 @@
 /* pages/question/realTest/chooseTestType/chooseTestType.wxss */
+.title{
+  padding-top: 30rpx;
+  margin-bottom: 30rpx;
+  font-size: 26rpx;
+  margin-left: 30rpx;
+  
+}
+.choosebox_view{
+margin-left: 30rpx;
+  margin-right: 30rpx;
+  margin-top: 20rpx;
+}
+.choosebox{
+  height: 100rpx;
+  padding-left: 30rpx;
+  padding-right: 30rpx;
+  
+  border-radius: 20rpx;
+  background: white;
+}
+.bottomView{
+  position: fixed;
+  bottom: 0rpx;
+  padding-top: 10rpx;
+  padding-bottom: 10rpx;
+
+  text-align: center;
+  width: 100%;
+  background-color: white;
+}

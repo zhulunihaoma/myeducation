@@ -1,0 +1,10 @@
+<!--pages/exercisePage/selectExercise/components/selectHeader/selectHeader.wxml-->
+<selectHeader>
+  <view class="selectHeader">
+    <view class="countdown">{{ c3 }}</view>
+    <view class="mistake_collection">
+      <wux-icon bindtap="ChooseSet" class="header_icon paper_icon" size="22" type="ios-paper" />
+      <wux-icon bindtap="Collecte" class="header_icon star_icon" size="22" type="{{collected?'ios-star':'ios-star-outline'}} " />
+    </view>
+  </view>
+</selectHeader>

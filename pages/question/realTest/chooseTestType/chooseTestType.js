@@ -5,7 +5,23 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    items1: [{
+      id: 1,
+      name: '青花瓷',
+      checked: true
+    }, {
+      id: 2,
+      name: '双截棍',
+        checked: true
+    }, {
+      id: 3,
+      name: '一千年以后',
+        checked: true
+    }, {
+      id: 4,
+      name: '江南',
+      checked: true
+    }],
   },
 
   /**
@@ -14,7 +30,9 @@ Page({
   onLoad: function (options) {
 
   },
-
+  onChangeTap(e) {
+    console.log(e)
+  },
   /**
    * 生命周期函数--监听页面初次渲染完成
    */

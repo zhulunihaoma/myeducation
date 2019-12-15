@@ -1,18 +1,25 @@
 // pages/selectcourse/courselist/courselist.js
+let height = wx.getSystemInfoSync().windowHeight
+let itemCount = 1000
+let items = [...new Array(itemCount)].map((v, i) => i)
+
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    scrollAbleTabs:[]
+    scrollAbleTabs:[],
+    disableScroll: false,
+    height,
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    setTimeout(this._asyncData, 500)
+    setTimeout(this._asyncData, 500);
+    this.updated(items);
   },
   _asyncData() {
     this.setData({
@@ -41,52 +48,49 @@ Page({
       }],
     })
   },
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-
+  updated(items) {
+    const startTime = Date.now()
+    this.virtualList = this.virtualList || this.selectComponent('#wux-virtual-list')
+    // debugger;
+    // this.virtualList.render(items, () => {
+    //   const diffTime = Date.now() - startTime
+    //   console.log(`onSuccess - render time: ${diffTime}ms`)
+    // })
   },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-
+  loadData() {
+    if (itemCount >= 10000) return
+    if (this.data.disableScroll) return
+    this.setData({ disableScroll: true })
+    wx.showLoading()
+    setTimeout(() => {
+      itemCount += 1000
+      items = [...new Array(itemCount)].map((v, i) => i)
+      this.updated(items)
+      this.setData({ disableScroll: false })
+      wx.hideLoading()
+      wx.stopPullDownRefresh()
+    }, 3000)
+    console.log('loadData')
   },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-
+  onChange(e) {
+    const { startIndex, endIndex } = e.detail
+    if (this.data.startIndex !== startIndex || this.data.endIndex !== endIndex) {
+      this.setData(e.detail)
+      console.log('onChange', e.detail)
+    }
   },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-
+  onPageScroll(e) {
+    // 当页面滚动时调用组件 scrollHandler 方法
+    this.virtualList.scrollHandler({ detail: e })
+    // console.log('onPageScroll', e)
   },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
+  onReachBottom() {
+    this.loadData()
+    console.log('onReachBottom')
   },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
+  onPullDownRefresh() {
+    itemCount = 0
+    this.loadData()
+    console.log('onPullDownRefresh')
   },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-
-  }
 })
