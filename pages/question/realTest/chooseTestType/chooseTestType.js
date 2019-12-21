@@ -7,19 +7,19 @@ Page({
   data: {
     items1: [{
       id: 1,
-      name: '青花瓷',
+      name: '言语理解与表达',
       checked: true
     }, {
       id: 2,
-      name: '双截棍',
+      name: '数量关系',
         checked: true
     }, {
       id: 3,
-      name: '一千年以后',
+      name: '常识判断',
         checked: true
     }, {
       id: 4,
-      name: '江南',
+      name: '判断推理',
       checked: true
     }],
   },
@@ -29,6 +29,11 @@ Page({
    */
   onLoad: function (options) {
 
+  },
+  GoselectIndex() {
+    wx.navigateTo({
+      url: '../../../exercisePage/selectExercise/selectIndex/selectIndex',
+    })
   },
   onChangeTap(e) {
     console.log(e)

@@ -23,22 +23,77 @@ Page({
     let data = "<div>< span >请说出你喜欢的水果？</span> <ul> <li>苹果</li> <li>香蕉</li><li>橙子</li> </ul></div >";
         //'<div><h3>javascript - <em>js同步编程</em>与异步编程的区别,异步有哪些优点,为什么...</h3><div><span>2016年5月20日 - </span>从编程方式来讲当然是<em>同步编程</em>的方式更为简单,但是同步有其局限性一是假如是单线程那么一旦遇到阻塞调用,会造成整个线程阻塞,导致cpu无法得到有效利用...</div><div><div></div><span ><span ></span></span> - 百度快照</div><div ><span>为您推荐：</span>js同步和异步ajax异步和同步的区别</div></div>';
     this.setData({ article_content: data })
-  
+    var timestamp = Date.parse(new Date());
+    var date = new Date(timestamp);
+    this.GetcurrentDate(date);
+
   },
-  openCalendar() {
+  ChooseDate() {
     // console.log(new $wuxCalendar());
     var that = this;
-
+    var timestamp = Date.parse(new Date());
+    var date = new Date(timestamp);
     $wuxCalendar().open({
-      value: that.data.value1,
+      value: [date],
       onChange: (values, displayValues) => {
         console.log('onChange', values, displayValues)
         that.setData({
-          value1: displayValues,
+          currentDate: displayValues[0],
         })
+        // that.GetcurrentDate(displayValues[0]);
       },
     })
   },
+  GetcurrentDate(date){
+    // 获取当前日期
+
+   
+    //获取年份  
+    var Y = date.getFullYear();
+    //获取月份  
+    var M = (date.getMonth() + 1 < 10 ? '0' + (date.getMonth() + 1) : date.getMonth() + 1);
+    //获取当日日期 
+    var D = date.getDate() < 10 ? '0' + date.getDate() : date.getDate();
+
+    console.log("当前时间：" + Y + '年' + M + '月' + D + '日');
+    this.setData({
+      currentDate: Y + '-' + M + '-' + D
+    })
+
+  },
+  touchStart: function (e) {
+    // console.log(e.touches[0].pageX)
+    let sx = e.touches[0].pageX
+    let sy = e.touches[0].pageY
+    this.data.touchS = [sx, sy]
+  },
+  touchMove: function (e) {
+    let sx = e.touches[0].pageX;
+    let sy = e.touches[0].pageY;
+    this.data.touchE = [sx, sy]
+  },
+  touchEnd: function (e) {
+    let start = this.data.touchS
+    let end = this.data.touchE
+    console.log(start)
+    console.log(end)
+    if (start[0] < end[0] - 50) {
+      console.log('右滑')
+      wx.showToast({
+        icon:'loading',
+        title: '右滑',
+      })
+    } else if (start[0] > end[0] + 50) {
+      console.log('左滑')
+      wx.showToast({
+        icon: 'loading',
+        title: '左滑',
+      })
+    } else {
+      console.log('静止')
+    }
+  },
+  
   /**
    * 生命周期函数--监听页面初次渲染完成
    */

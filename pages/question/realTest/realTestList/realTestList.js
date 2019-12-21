@@ -5,7 +5,122 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    components: [{
+      title: '国考',
+      children: [{
+        title: '',
+        remark: '2009402联考《行题》真题网友回忆版本',
+        url: '../chooseTestType/chooseTestType',
+      },
+      {
+        title: '',
+        remark: '2019402联考《行题》真题',
+        url: '../chooseTestType/chooseTestType',
+      },
+      {
+        title: '',
+        remark: '2018802联考《行题》真题网友回忆版本',
+        url: '../chooseTestType/chooseTestType',
+      }
+      ],
+    },
+    {
+      title: '江苏',
+      children: [{
+        title: '',
+        remark: '2009402联考《行题》真题网友回忆版本',
+        url: '../chooseTestType/chooseTestType',
+      },
+        {
+          title: '',
+          remark: '2019402联考《行题》真题',
+          url: '../chooseTestType/chooseTestType',
+        },
+        {
+          title: '',
+          remark: '2018802联考《行题》真题网友回忆版本',
+          url: '../chooseTestType/chooseTestType',
+        }
+      ],
+    },
+    {
+      title: '广东',
+      children: [{
+        title: '',
+        remark: '2009402联考《行题》真题网友回忆版本',
+        url: '../chooseTestType/chooseTestType',
+      },
+        {
+          title: '',
+          remark: '2019402联考《行题》真题',
+          url: '../chooseTestType/chooseTestType',
+        },
+        {
+          title: '',
+          remark: '2018802联考《行题》真题网友回忆版本',
+          url: '../chooseTestType/chooseTestType',
+        }
+      ],
+    },
+    {
+      title: '北京',
+      children: [{
+        title: '',
+        remark: '2009402联考《行题》真题网友回忆版本',
+        url: '../chooseTestType/chooseTestType',
+      },
+        {
+          title: '',
+          remark: '2019402联考《行题》真题',
+          url: '../chooseTestType/chooseTestType',
+        },
+        {
+          title: '',
+          remark: '2018802联考《行题》真题网友回忆版本',
+          url: '../chooseTestType/chooseTestType',
+        }
+      ],
+    },
+    {
+      title: '河南',
+      children: [{
+        title: '',
+        remark: '2009402联考《行题》真题网友回忆版本',
+        url: '../chooseTestType/chooseTestType',
+      },
+        {
+          title: '',
+          remark: '2019402联考《行题》真题',
+          url: '../chooseTestType/chooseTestType',
+        },
+        {
+          title: '',
+          remark: '2018802联考《行题》真题网友回忆版本',
+          url: '../chooseTestType/chooseTestType',
+        }
+      ],
+    },
+    {
+      title: '山东',
+      children: [{
+        title: '',
+        remark: '2009402联考《行题》真题网友回忆版本',
+        url: '../chooseTestType/chooseTestType',
+      },
+        {
+          title: '',
+          remark: '2019402联考《行题》真题',
+          url: '../chooseTestType/chooseTestType',
+        },
+        {
+          title: '',
+          remark: '2018802联考《行题》真题网友回忆版本',
+          url: '../chooseTestType/chooseTestType',
+        }
+      ],
+    },
+    
+    ],
   },
 
   /**

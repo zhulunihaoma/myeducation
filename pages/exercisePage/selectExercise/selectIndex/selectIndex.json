@@ -1,5 +1,9 @@
 {
+  "navigationBarTitleText": "答题",
   "usingComponents": {
-    "selectHeader":"../components/selectHeader/selectHeader"
+    "selectHeader":"../components/selectHeader/selectHeader",
+    "selectContent": "../components/selectContent/selectContent",
+    "selectBottom": "../components/selectBottom/selectBottom"
+
   }
 }

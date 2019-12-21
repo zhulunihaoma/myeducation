@@ -1,0 +1,27 @@
+/* pages/exercisePage/selectExercise/components/selectBottom/selectBottom.wxss eee */
+.bootmView{
+  height: 90rpx;
+  background: white;
+  position: fixed;
+  bottom: 0rpx;
+  width: 100%;
+  display: flex;
+  font-size: 28rpx;
+
+}
+.line{
+  position: absolute;
+  height: 50rpx;
+  background: #eee;
+  display: inline-block;
+  bottom: 16rpx;
+  width: 2rpx;
+  left: 50%;
+  
+}
+.bootmButton{
+  width: 50%;
+  text-align: center;
+  line-height: 90rpx;
+
+}

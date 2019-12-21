@@ -1,0 +1,40 @@
+/* pages/exercisePage/selectExercise/components/selectContent/selectContent.wxss */
+.selectContent_header{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 90rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+  font-size: 26rpx;
+}
+.selectContent_intro{
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+  line-height: 60rpx;
+  text-indent: 2em;
+  color: #808080;
+
+}
+.selectItem_content{
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+  margin-top: 30rpx;
+
+}
+.selectItem{
+  margin-top: 60rpx;
+}
+.selectItemIcon{
+  border: solid 2rpx #3963bc;
+  display: inline-block;
+  height: 80rpx;
+  width: 80rpx;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 80rpx;
+  margin-right: 30rpx;
+  color: #3963bc;
+
+}

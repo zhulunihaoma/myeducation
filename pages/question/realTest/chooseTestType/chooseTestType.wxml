@@ -7,5 +7,5 @@
 
 
 </l-checkbox-group>
-<view class="bottomView"> <l-button size="large">开始做题</l-button>
+<view class="bottomView"> <l-button bindtap="GoselectIndex" size="large">开始做题</l-button>
 </view>

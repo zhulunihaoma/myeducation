@@ -1,2 +1,5 @@
 <!--pages/exercisePage/selectExercise/selectIndex/selectIndex.wxml-->
 <selectHeader />
+<selectContent />
+<selectBottom />
+

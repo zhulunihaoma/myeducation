@@ -1,5 +1,5 @@
 <!--pages/question/realTest/realTestList/realTestList.wxml-->
-<wux-accordion-group class='aaa' accordion default-current="{{ [] }}">
+<!-- <wux-accordion-group class='aaa' accordion default-current="{{ [] }}">
   <wux-accordion title="江苏">
     <view bindtap="GoChooseType" class="sublist_item">2019402联考《行题》真题网友回忆版本</view>
   </wux-accordion>
@@ -27,4 +27,13 @@
   <wux-accordion title="国考">
     <view bindtap="GoChooseType" class="sublist_item">2019402联考《行题》真题网友回忆版本</view>
   </wux-accordion>
-</wux-accordion-group>
+</wux-accordion-group> -->
+<block wx:for="{{ components }}" wx:key="">
+  <wux-accordion-group cellGroupPrefixCls="demo-category" defaultCurrent="0">
+    <wux-accordion prefixCls="demo-category-item" key="{{ index }}" title="{{ item.title }}">
+      <block wx:for="{{ item.children }}" wx:key="" wx:for-item="child">
+        <wux-cell prefixCls="demo-category-cell" title="{{ child.title + ' ' + child.remark }}" is-link url="{{ child.url }}"></wux-cell>
+      </block>
+    </wux-accordion>
+  </wux-accordion-group>
+</block>

@@ -1,6 +1,6 @@
 <!--pages/question/home/components/HomeBottom/HomeBottom.wxml-->
 <HomeBottom>
-  <view class="BottomView">
+  <view  class="BottomView">
     <view class="card_header">
       <text>刷题</text>
       <wux-icon bindtap="ChooseSet" class="header_icon" size="27" type="ios-settings" />

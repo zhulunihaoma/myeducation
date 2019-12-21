@@ -1,0 +1,41 @@
+<!--pages/exercisePage/selectExercise/components/selectContent/selectContent.wxml-->
+<selectContent>
+  <view class="selectContent">
+    <view class="selectContent_header">
+      <view class="type_select">
+        <text class="typeName">数量关系</text>
+        <text class="typeTip">（单选题）</text>
+        <wux-icon bindtap="ChooseSet" class="header_icon" size="26" type="md-arrow-dropdown" />
+
+      </view>
+
+      <view class="count">
+        <text>1</text>
+        <text>/50</text>
+      </view>
+    </view>
+    <!-- 题目主体内容 -->
+    <view class="selectContent_intro">
+      扶贫干部某日需要走访村内6个贫困户甲乙丙丁是粉丝的胜多负少的说的话接口返回打算看是电话费夹克上的和接口第三方第三方是的好假史蒂芬霍金肯定是但是返回几款到时候放假打算艰苦奋斗上课结束待发货德生科技但是返回夹克上的和复健科
+    </view>
+    <!-- 选项 -->
+    <view class="selectItem_content">
+      <view class="selectItem">
+        <text class="selectItemIcon itemA">A</text>
+        <text>20</text>
+      </view>
+      <view class="selectItem">
+        <text class="selectItemIcon itemA">B</text>
+        <text>37</text>
+      </view>
+      <view class="selectItem">
+        <text class="selectItemIcon itemA">C</text>
+        <text>40</text>
+      </view>
+      <view class="selectItem">
+        <text class="selectItemIcon itemA">D</text>
+        <text>50</text>
+      </view>
+    </view>
+  </view>
+</selectContent>

@@ -123,6 +123,11 @@ Component({
    * 组件的方法列表
    */
   methods: {
+    GoselectIndex() {
+      wx.navigateTo({
+        url: '../../../../../../exercisePage/selectExercise/selectIndex/selectIndex',
+      })
+    },
     ShowSubList(e) {
       const index = e.currentTarget.dataset.index;
       let titleList = this.data.title;

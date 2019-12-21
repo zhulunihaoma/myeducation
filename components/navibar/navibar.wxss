@@ -13,7 +13,11 @@
   font-weight: bold;
   margin-top: 10rpx;
 }
-
+.header_icon{
+ position: relative;
+ top: 6rpx;
+ right: -6rpx;
+}
 .navibar {
   width: 190rpx;
   border: 2rpx solid #efefef;

@@ -1,0 +1,9 @@
+<!--pages/exercisePage/selectExercise/components/selectBottom/selectBottom.wxml-->
+<selectBottom>
+<view class="bootmView subColor80">
+<text class="line"></text>
+<view class="bootmButton">分享试题</view>
+<view class="bootmButton">查看答案</view>
+
+</view>
+</selectBottom>

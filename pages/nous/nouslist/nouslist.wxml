@@ -1,10 +1,10 @@
 <!--pages/nous/nouslist/nouslist.wxml-->
 <!-- <rich-text nodes="{{article_content}}"></rich-text> -->
 <!--  -->
-<navibar bindtap='openCalendar' class='navibar' title="" />
+<navibar bind:ChooseDate='ChooseDate' currentDate='{{currentDate}}' bindtap='openCalendar' class='navibar' title="" />
 <wux-calendar id="wux-calendar" />
 
-<view style='height: {{WindowHeight}}px;margin-top:{{CustomBar}}px'>
+<view class="nouslist_content"  bindtouchstart='touchStart' bindtouchmove='touchMove' bindtouchend='touchEnd' style='height: {{WindowHeight}}px;margin-top:{{CustomBar}}px'>
   <view class="title">注意啦 泰州全市新一轮教师招聘来了！</view>
   <view class="content">规模大 市直和三市四区都要招！ 人数多 一共要招833人！ 而且全部是全额拨款事业编制！ 有没有你正在期待的岗位呢？ 快来看看吧！ 年龄在18周岁以上、35周岁以下（1983年12月12日到2001年12月16日期间出生）； 目前在海陵区区属公办幼儿园教师岗位工作满5年及以上的人员报考学前教育岗位时，年龄可放宽至40周岁（1978年12月12日以后出生）； 目前已聘用在高港区公办幼儿园教学岗位5年及以上报考幼儿教师岗位的人员，年龄可放宽至40周岁以下（1978年12月12日后出生）。
 
