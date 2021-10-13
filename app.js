@@ -45,6 +45,20 @@ App({
     })
   },
   globalData: {
-    userInfo: null
+    userInfo: null,
+    LocalVersionId: '1.2',//1.0  1.2 （配合数据库轮换着）审核用  1.1体验版用
+    OnlineVersionId: '',
+    ShowCheck: false,//显示审核内容
+    openid: '',
+    shopId: '',
+    allcar: {},
+    goodscararr: [],
+    shopinfo: {},
+    userinfo: {},
+    ShareGoodsInfo: {},
+    RequestUrl: "http://api.tangjunyi.net/api/", //线上环境
+    RequestlocalUrl: "http://localhost:8885/",//本地环境
+    ImgUrl: "https://www.eastzebra.cn/servicepicture/",
+    QcodeUrl: "https://www.eastzebra.cn/qrcode/"
   }
 })
